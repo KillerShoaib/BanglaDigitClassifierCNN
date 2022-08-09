@@ -1,0 +1,131 @@
+h1 {
+  color: #1c0a00;
+  position: relative;
+  font-weight: 600;
+  font-size: 3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans";
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(#9fc088, #cc704b, #9fc088);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+canvas {
+  position: relative;
+  left: 38%;
+  border-radius: 10px;
+}
+
+.button_container {
+  text-align: center;
+
+  padding: 10px;
+  font-size: 5px;
+}
+
+.button {
+  top: 10%;
+  left: 30%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid #836f4e;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #836f4e;
+  color: rgb(3, 3, 3);
+}
+
+.button-clear {
+  background-color: #7e3f1d;
+  margin-right: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.predictionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+  height: 70px;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-color: #836f4e;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@media screen and (max-width: 700px) {
+
+  canvas {
+    position: relative;
+    left: 5%;
+    border-radius: 10px;
+  }
+
+  .predictionContainer {
+    display: flex;
+    margin-left: 5x;
+    margin-right: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 5px;
+    height: 50px;
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-color: #836f4e;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .label {
+    margin-left: 100px;
+    font-size: small;
+    color: #1c0a00;
+    justify-content: center;
+  }
+
+  .input {
+    width: 10px;
+  }
+}
+
+.label {
+  margin-left: 50px;
+  margin-right: 25px;
+  margin-top: 10px;
+  color: #1c0a00;
+}
+
+.input {
+  width: 50px;
+  height: 30px;
+}
