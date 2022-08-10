@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'BanglaDigitClassifier'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_90F6CD1C811A443888FDBA5764837FD0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6BB314DEB16F478A8D4FAD3B558495F5 }}
