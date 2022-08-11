@@ -29,7 +29,7 @@ jobs:
 
       - name: Install open-cv headless manually
         run: |
-          apt-get update && apt-get install -y opencv-python-headless
+          sudo apt-get update && apt-get install -y opencv-python-headless
           pip install opencv-python-headless
 
       - name: Install dependencies
