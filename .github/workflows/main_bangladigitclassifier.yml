@@ -27,10 +27,6 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
-      - name: Install open-cv headless manually
-        run: |
-          pip install opencv-python-headless
-
       - name: Install dependencies
         run: pip install -r requirements.txt
 
