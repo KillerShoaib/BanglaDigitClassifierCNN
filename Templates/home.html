@@ -11,10 +11,15 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/favicon_bangla_digit_classifier_project.png"
+    />
     <title>Bangla Digit Classifier</title>
   </head>
   <body>
-    <div class="title">
+    <div class="container text-center">
       <h1>Bangla Digit Classification</h1>
     </div>
 
@@ -28,12 +33,39 @@
     </div>
 
     <div class="predictionContainer">
-      <div class="label">
-        <label class="'label"> Predicted Value : </label>
-      </div>
-      <div class="input">
-        <input input type="text" class="input" id="inputField" />
-      </div>
+      <label> Predicted Value : </label>
+
+      <input input type="text" id="inputField" />
+    </div>
+
+    <div class="tutvid">
+      <button
+        type="button"
+        class="button button-clear"
+        data-bs-toggle="modal"
+        data-bs-target="#TutorialVideo"
+      >
+        Demostration Video
+      </button>
+    </div>
+
+    <div
+      class="modal fade"
+      id="TutorialVideo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="TutorialVideoTitle"
+      aria-hidden="true"
+    >
+      <din class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <video width="100%" controls autoplay loop muted>
+              <source src="../static/Demonstration.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </din>
     </div>
 
     <script src="../static/canvas.js"></script>

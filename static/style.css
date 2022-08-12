@@ -16,11 +16,7 @@ body {
   height: 100%;
 }
 
-.title {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
+
 
 canvas {
   position: relative;
@@ -62,8 +58,11 @@ canvas {
 }
 
 .predictionContainer {
+  margin-left: 250px;
+  margin-right: 200px;
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   align-content: center;
   padding: 5px;
@@ -83,16 +82,18 @@ canvas {
 
   canvas {
     position: relative;
-    left: 5%;
+    left: 15%;
     border-radius: 10px;
   }
 
   .predictionContainer {
+    margin-left: 50px;
     display: flex;
     margin-left: 5x;
     margin-right: 5px;
     margin-top: 10px;
     justify-content: center;
+    text-align: center;
     padding: 5px;
     height: 50px;
     background: linear-gradient(135deg,
@@ -106,26 +107,36 @@ canvas {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 
-  .label {
+  .predictionContainer label {
     margin-left: 100px;
     font-size: small;
     color: #1c0a00;
     justify-content: center;
   }
 
-  .input {
+  .predictionContainer input {
     width: 10px;
   }
 }
 
-.label {
+.predictionContainer label {
   margin-left: 50px;
   margin-right: 25px;
   margin-top: 10px;
   color: #1c0a00;
 }
 
-.input {
+.predictionContainer input {
   width: 50px;
   height: 30px;
+}
+
+.tutvid {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.modal-content {
+  background: transparent !important;
+  border: none !important;
 }
